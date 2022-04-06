@@ -6,10 +6,13 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
 
 ## Indice
 * [Diferencias entre JS y NodeJS](#id1)
-    * [Requisitos para empezar en JS]()
-* [Primeros pasos en JS]()
-    * [Declaración de variables](#)
-    * [Tipos de datos de variables]()
+    * [Requisitos para empezar en JS](#id2)
+* [Primeros pasos en JS](#id3)
+    * [Declaración de variables](#id4)
+    * [Tipos de datos en las variables](#id5)
+* [Operadores de asignación](#id6)
+* [Operadores Aritméticos](#id7)
+
 
 
 ## Diferencias entre JavaScript y NodeJS <a name="id1"></a>
@@ -114,5 +117,28 @@ Un ultimo tipo de dato nativo es el NaN, no es que ses especificamente un tipo d
 | undefined | var numero |
 | null | var numero2=null |
 
+## Operadores de asignación <a name="id6"></a>
+
+Un operador asignación asigna un valor al operando de la izquierda basado en el valor del operando de la derecha... osea se pasa lo de la derecha a la izquierda dependiendo del operador
+
+| Operador | Abreviaciones | Significado |
+|---|---|---|
+| Asignación | x = y | x = y |
+| Asignación de Adición | x += y | x = x + y |
+| Asignación de Sustracción| x -= y | x = x - y |
+| Asignación de Multiplicación | x *= y | x = x * y |
+| Asignación de División| x /= y | x = x / y |
+| Asignación de Resto/Módulo | x %= y | x = x % y |
+| Asignación de Exponenciación| x **= y | x = x ** y |
+| Asignación de Desplazamiento a la izquierda| x <<= y | x = x << y |
+| Asignación de Desplazamiento a la derecha| x >>= y | x = x >> y |
+| Asignación AND | x &= y | x = x & y |
+| Asignación XOR | x ^= y | x = x ^ y |
+| Asignación OR | x |= y | x = x | y |
+
+
+## Operadores aritméticos <a name="id7"></a>
+
+Los operadores aritméticos toman valores numéricos como sus operandos y retornan un valor numérico único
 
 
