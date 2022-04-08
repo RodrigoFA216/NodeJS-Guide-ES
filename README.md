@@ -36,6 +36,12 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
 
 #### Software
 
+<ul>
+    <li>
+        <input type="checkbox">
+    </li>
+</ul>
+
 * Git shell https://git-scm.com/
 * NodeJS instalado https://nodejs.org/en/
 * Visual Studio Code https://code.visualstudio.com/
