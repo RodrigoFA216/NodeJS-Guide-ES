@@ -13,3 +13,7 @@ alert(numero2);
 
 let variable=prompt("text");
 alert("el texto introducido es " + variable);
+
+var nombre="Rodrigo Flores";
+var frase=`soy ' "${nombre}" ' y estoy caminando`;
+document.write(frase);

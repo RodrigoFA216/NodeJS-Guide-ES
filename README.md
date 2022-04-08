@@ -4,7 +4,7 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
 
 ![If you look this... something go wrong](/tipos%20de%20tipados.png)
 
-## Indice
+## Indice Capitulo 1
 * [Diferencias entre JS y NodeJS](#id1)
     * [Requisitos para empezar en JS](#id2)
 * [Primeros pasos en JS](#id3)
@@ -16,6 +16,7 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
     * [Input de datos](#id9)
     * [Out de datos](#id10)
 
+## Indice Capitulo 2
 
 
 ## Diferencias entre JavaScript y NodeJS <a name="id1"></a>
@@ -32,7 +33,7 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
 | Es la versión mejorada del script ECMA que usa V8 de Chrome escrito en C++  | NodeJS está escrito en C, C++ y JavaScript |
 | Los errores se muestran en la ejecución | Los errores se muestran en la compilación |
 
-### Requisitos para empezar en JS <a name="id2"></a>
+### Requisitos para empez<ar en JS <a name="id2"></a>
 
 #### Software
 
@@ -120,36 +121,11 @@ Un ultimo tipo de dato nativo es el NaN, no es que ses especificamente un tipo d
 | undefined | var numero |
 | null | var numero2=null |
 
-## Operadores de asignación <a name="id6"></a>
-
-Un operador asignación asigna un valor al operando de la izquierda basado en el valor del operando de la derecha... osea se pasa lo de la derecha a la izquierda dependiendo del operador
-
-| Operador | Abreviaciones | Significado |
-|---|---|---|
-| Asignación | x = y | x = y |
-| Asignación de Adición | x += y | x = x + y |
-| Asignación de Sustracción| x -= y | x = x - y |
-| Asignación de Multiplicación | x *= y | x = x * y |
-| Asignación de División| x /= y | x = x / y |
-| Asignación de Resto/Módulo | x %= y | x = x % y |
-| Asignación de Exponenciación| x **= y | x = x ** y |
-| Asignación de Desplazamiento a la izquierda| x <<= y | x = x << y |
-| Asignación de Desplazamiento a la derecha| x >>= y | x = x >> y |
-| Asignación AND | x &= y | x = x & y |
-| Asignación XOR | x ^= y | x = x ^ y |
-| Asignación OR | x |= y | x = x | y |
-
-
-## Operadores aritméticos <a name="id7"></a>
-
-Los operadores aritméticos toman valores numéricos como sus operandos y retornan un valor numérico único.
-
-
-## Entrada y salida de datos <a name="id8"></a>
+## Entrada y salida de datos <a name="id6"></a>
 
 La inserción de los datos en JS se puede hacer de varias formas, desde el HTML y desde el JS.
 
-### Input de datos <a name="id9"></a>
+### Input de datos <a name="id7"></a>
 
 Desde JS se puede hacer con una BuiltIn Function como lo es prompt(), ahora, prompt regresa al scope un valor dependiendo de lo que se ingrese. Es decir, se tiene que declarar una variable con =prompt().
 
@@ -179,7 +155,7 @@ Código:
         <button type="submit">Submit</button>
     </form>
 
-### Out de datos <a name="id10"></a>
+### Out de datos <a name="id8"></a>
 
 Para mostrar la salida de los datos introducidos en el paso anterior con JS en el apartado de la función prompt() ya guadados en una variable lo que podríamos hacer es ocupar builtIn Functions, como lo son: document.whrite() y alert().
 
@@ -193,3 +169,135 @@ La BuiltIn Function document.write() funciona similarmente al alert, sin embargo
     let variable=prompt("Introduce un texto");
     document.write("el texto introducido es: " + variable);
 
+
+
+## Operadores de asignación <a name="id9"></a>
+
+Un operador asignación asigna un valor al operando de la izquierda basado en el valor del operando de la derecha... osea se pasa lo de la derecha a la izquierda dependiendo del operador
+
+| Operador | Abreviaciones | Significado |
+|---|---|---|
+| Asignación | x = y | x = y |
+| Asignación de Adición | x += y | x = x + y |
+| Asignación de Sustracción| x -= y | x = x - y |
+| Asignación de Multiplicación | x *= y | x = x * y |
+| Asignación de División| x /= y | x = x / y |
+| Asignación de Resto/Módulo | x %= y | x = x % y |
+| Asignación de Exponenciación| x **= y | x = x ** y |
+| Asignación de Desplazamiento a la izquierda| x <<= y | x = x << y |
+| Asignación de Desplazamiento a la derecha| x >>= y | x = x >> y |
+| Asignación AND | x &= y | x = x & y |
+| Asignación XOR | x ^= y | x = x ^ y |
+| Asignación OR | x |= y | x = x | y |
+
+
+## Operadores aritméticos <a name="id10"></a>
+
+Los operadores aritméticos toman valores numéricos como sus operandos y retornan un valor numérico único.
+
+Tomando en cuenta que:
+
+    let x=10;
+    let y=5;
+    let r=null;
+
+| Operador | Ejemplo | Ejemplo variable |
+|----------|---------|------------------|
+| Adición       | x + y | r=x+y; |
+| Substracción  | x-y | r=x-y |
+| División      | x/y | r=x/y |
+| Multiplicación| x*y | r=x*y |
+| Incremento    | x++ | r=x++ |
+| Decremento    | x-- | r=x-- |
+| Exponenciación| x**y | r=x**y |
+| Resto         | x%y | r=x%y |
+| Negación unaria| -x | r=-x |
+| Adición unaria | +x | r=+x |
+
+## Concatencaión <a name="id11"></a>
+
+Como tal la concatenación es unir dos strings. No hay más y no hay menos. Por ejemplo:
+
+    let saludo="Hola Juanjo";
+    let pregunta="¿cómo estás?";
+    let frase=saludo+pregunta;
+    docuemnt.write(frase);
+
+Ahora, pongamos el ejemplo de que quiero concatenar numeros, no sumarlos. 
+
+    let numero1=5;
+    let numero2=6;
+    let frase=""+numero1+numero2;
+
+Sin embargo JS también teien un BuiltIn Method que es concat() sin embargo necesitamos un string con un numero, con lo que haríamos
+
+    let numero1="58";
+    let numero2=6;
+    let frase=numero1.concat(numero2);
+
+Existen otras formas de concatenar como lo son las backticks:
+
+    let nombre="Rodrigo Flores";
+    let frase=`soy ${nombre} y estoy caminando`
+
+(los backticks se ponen con la tecla de AltGr y la tecla de cierre de } en la distribución de teclado latinoamericano, osea con el @ en la Q muchasveces al ser un acento como ^ necesita de la tecla espaciadora)
+
+con el uso de backticks también podemos incluir comillas simples y comillas dobles en nuestros strings sin hacer cosas raras como usar ascii con C/C++ por ejemplo:
+
+    let nombre="Rodrigo Flores";
+    let frase=`soy ' "${nombre}" ' y estoy caminando`
+
+Por lo que los BackTicks nos dan una mayor soltura en el tipado e inserción de HTML y CSS con la utilización de métodos instancias y funciones de JS
+
+## Operadores de comparación <a name="id12"></a>
+
+Los operadores de comparación son operadores específicos que devuelven un valor booleano según los parametros de inserción, es decir que va a comparar dos datos y va a devolver un valor true o valor false en función de los parametros que le ingresamos. 
+
+Tomando en cuenta que:
+
+    let x=10;
+    let y=5;
+
+| Operador | Ejemplo | Valor |
+|----------|---------|-------|
+| Igualdad      | x == y | false |
+| Desigualdad   | x != y | true |
+| Identidad     | x === y | false |
+| DesIdentidad  | x !== y | true |
+| Mayor que     | x > y | true |
+| Mayor o igual que| x >= y | true |
+| Menor que     | x < y | false |
+| Menor o igual que| x <= y | false |
+
+La diferencia de identidad e Igualdad en JS es la siguiente:
+
+El operador de Igualdad verifica que los datos ingresados sean iguales independientemente de sus tipos de datos:
+
+    let numero=23;
+    let texto="23";
+    document.write(texto==numero);
+>Resultado: true
+
+El operador Identidad compara los datos no solo por su contenido si no por su tipo de dato también:
+
+    let numero=23;
+    let texto="23";
+    document.write(texto===numero);
+>Resultado: false
+
+Sucede lo mismo con !== y !=
+
+El operador Desigualdad compara dos valores sin importar el tipo de dato:
+
+    let numero=23;
+    let texto="23";
+    document.write(texto!=numero);
+>Resultado: false
+El tipo de dato es distinto pero le estoy preguntando si la variable texto es diferente a la variable numero. Como no le importa el tipo de dato me dice que es false por que si contienen  lo mismo
+
+El operador DesIdentidad compara dos valores priorizando el tipo de dato:
+
+    let numero=23;
+    let texto="23";
+    document.write(texto!==numero);
+>Resultado: true
