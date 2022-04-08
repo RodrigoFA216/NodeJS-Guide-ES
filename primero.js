@@ -11,6 +11,5 @@ alert(numero);
 let numero2=null;
 alert(numero2);
 
-let numeor3=2;
-let string2="Doge";
-alert(numero3*string2);
+let variable=prompt("text");
+alert("el texto introducido es " + variable);

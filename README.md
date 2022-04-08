@@ -12,6 +12,9 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
     * [Tipos de datos en las variables](#id5)
 * [Operadores de asignación](#id6)
 * [Operadores Aritméticos](#id7)
+* [Entrada y salida de datos](#id8)
+    * [Input de datos](#id9)
+    * [Out de datos](#id10)
 
 
 
@@ -139,6 +142,54 @@ Un operador asignación asigna un valor al operando de la izquierda basado en el
 
 ## Operadores aritméticos <a name="id7"></a>
 
-Los operadores aritméticos toman valores numéricos como sus operandos y retornan un valor numérico único
+Los operadores aritméticos toman valores numéricos como sus operandos y retornan un valor numérico único.
 
+
+## Entrada y salida de datos <a name="id8"></a>
+
+La inserción de los datos en JS se puede hacer de varias formas, desde el HTML y desde el JS.
+
+### Input de datos <a name="id9"></a>
+
+Desde JS se puede hacer con una BuiltIn Function como lo es prompt(), ahora, prompt regresa al scope un valor dependiendo de lo que se ingrese. Es decir, se tiene que declarar una variable con =prompt().
+
+Prompt puede tener un argumento de texto que sea de la siguiente forma
+
+    prompt("< texto >")
+
+Lo que se verá en tu sitio o docuemto será una ventana emergente que tendrá el texto ingresado, en este caso sería <hr><h3>La página X dice</h3><code><span>< texto > <br><input type="Text"></input></span></code><br><br><button>Aceptar</button> <button>Cancelar</button><hr>
+
+Por ejemplo, para obtener de forma exitosa la inserción del usuario cuando le estamos podiendo su nombre tedríamos que hacer el siguiente código:
+
+    let variable=prompt("Ingresa tu nombre");
+
+dentro de la etiqueta form en una etiqueta input del tipo especificado, por ejemplo desde el elemento:
+
+<code>
+    <form>
+        <input type="number">
+        <button type="submit">Submit</button>
+    </form>
+</code>
+<br>
+Código:
+
+    <form>
+        <input type="number">
+        <button type="submit">Submit</button>
+    </form>
+
+### Out de datos <a name="id10"></a>
+
+Para mostrar la salida de los datos introducidos en el paso anterior con JS en el apartado de la función prompt() ya guadados en una variable lo que podríamos hacer es ocupar builtIn Functions, como lo son: document.whrite() y alert().
+
+Alert va a desplegar una ventana flotante al igual que la ventana de prompt() para mostrar los datos que sean necesarios. la función document.write va a generar html específico par apoder escribir el texto que se encuentre en la variable que le demos como argumento, podemos concatenar variables con texto de la siguiente forma:
+
+    let variable=prompt("Introduce un texto");
+    alert("El texto introducido es: " + variable);
+
+La BuiltIn Function document.write() funciona similarmente al alert, sin embargo document.write() lo imprimer dentro del documento en el fondo de todo de no especificarse dónde va a ser introducido. Podemos jugar con esto si visualizamos el [Documento](/index.html) que está dentro de este repositorio
+
+    let variable=prompt("Introduce un texto");
+    document.write("el texto introducido es: " + variable);
 
