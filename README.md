@@ -2,7 +2,7 @@
 
 Javascript es un lenguaje de programación interpretado que puede correr en web, es dinámico, multiparadigma y tiene un tipado débil, aquí puedes ver una imagen representativa de cómo son los tipos de tipado de los distintos lenguajes de programación... HTML y CSS no son lenguajes, lo siento. 
 
-![If you look this... something go wrong](/tipos%20de%20tipados.png)
+![If you look this... something go wrong](./tipos%20de%20tipados.png)
 
 ## Indice Capitulo 1
 * [Diferencias entre JS y NodeJS](#id1)
@@ -10,11 +10,11 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
 * [Primeros pasos en JS](#id3)
     * [Declaración de variables](#id4)
     * [Tipos de datos en las variables](#id5)
-* [Operadores de asignación](#id6)
-* [Operadores Aritméticos](#id7)
-* [Entrada y salida de datos](#id8)
-    * [Input de datos](#id9)
-    * [Out de datos](#id10)
+* [Entrada y salida de datos](#id6)
+    * [Input de datos](#id7)
+    * [Out de datos](#id8)
+* [Operadores de asignación](#id9)
+* [Operadores Aritméticos](#id10)
 
 ## Indice Capitulo 2
 
@@ -33,7 +33,7 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
 | Es la versión mejorada del script ECMA que usa V8 de Chrome escrito en C++  | NodeJS está escrito en C, C++ y JavaScript |
 | Los errores se muestran en la ejecución | Los errores se muestran en la compilación |
 
-### Requisitos para empez<ar en JS <a name="id2"></a>
+### Requisitos para empez en JS<ar en JS <a name="id2"></a>
 
 #### Software
 
@@ -133,27 +133,13 @@ Prompt puede tener un argumento de texto que sea de la siguiente forma
 
     prompt("< texto >")
 
-Lo que se verá en tu sitio o docuemto será una ventana emergente que tendrá el texto ingresado, en este caso sería <hr><h3>La página X dice</h3><code><span>< texto > <br><input type="Text"></input></span></code><br><br><button>Aceptar</button> <button>Cancelar</button><hr>
+Lo que se verá en tu sitio o docuemto será una ventana emergente que tendrá el texto ingresado, en este caso sería
+![If you see this... something go wrong](./Prompt.png)
 
 Por ejemplo, para obtener de forma exitosa la inserción del usuario cuando le estamos podiendo su nombre tedríamos que hacer el siguiente código:
 
     let variable=prompt("Ingresa tu nombre");
 
-dentro de la etiqueta form en una etiqueta input del tipo especificado, por ejemplo desde el elemento:
-
-<code>
-    <form>
-        <input type="number">
-        <button type="submit">Submit</button>
-    </form>
-</code>
-<br>
-Código:
-
-    <form>
-        <input type="number">
-        <button type="submit">Submit</button>
-    </form>
 
 ### Out de datos <a name="id8"></a>
 
