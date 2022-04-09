@@ -33,7 +33,7 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
 | Es la versión mejorada del script ECMA que usa V8 de Chrome escrito en C++  | NodeJS está escrito en C, C++ y JavaScript |
 | Los errores se muestran en la ejecución | Los errores se muestran en la compilación |
 
-### Requisitos para empez en JS<ar en JS <a name="id2"></a>
+### Requisitos para empez en JS<a name="id2"></a>
 
 #### Software
 
@@ -287,3 +287,47 @@ El operador DesIdentidad compara dos valores priorizando el tipo de dato:
     let texto="23";
     document.write(texto!==numero);
 >Resultado: true
+
+
+### Comparadores booleanos
+
+Los comparadores booleanos son similares a los comparadores normales, sin embargo los comparadores booleanos solo pueden comparar valores booleanos, ya sea que provengan de una variable con un dato booleano o de una expresión previamente comparada.
+
+Tomando en cuenta que:
+
+    let a=12;
+    let b=24;
+    let c=25;
+    let d=92;
+    let e=91;
+    let f=true;
+    let g=false
+
+| Operador | Ejemplo | Valor |
+|----------|---------|-------|
+| Compuerta AND | f&&g | false |
+| Compuerta OR  | f||g | true |
+| Compuerta NOT | !f | false |
+|  | !g | true |
+
+Como lo dije antes, los operandos pueden venir desde una variable con un dato booleano o desde una respuesta a una sentencia de comparación, Por ejemplo:
+
+    let resultado1=(a<b||b<c)&&(!a&&e!=d);
+>Resultado: False
+
+## Camel case <a name="id13"></a>
+
+El camel case o tipado de tipo camello es el paradigma con el cual según las buenas prácticas debería funcionar JS, tanto para las variables como para las funciones. Consiste en que si nuestra función / variable tiene dentro más de una palabra util para describir su funcionamiento se va a escribir de la siguiente manera:
+
+Imaginemos que necesitamos escribir la función para que un perro azul maulle... si, bastante original:
+
+### Variables
+
+    let perroAzulMaullido;
+
+### Funciones
+
+    function perroAzulMaullido(){
+        let perroAzulMaullido;
+    }
+Como podemos observar la primera palabra aparece en minusculas, la segunda con la letra inicial en mayúscula y lo semás en minuscula, así mismo con la siguiente palabra, y d etener más deberían seguir el mismo patrón para poder ser legibles facilmente y rápido ya que como sabemos, más del 80% del tiempo d eprogramación leemos código en vez de redactar.
