@@ -420,27 +420,28 @@ Si el condicional if devuelve un valor false podremos tomar dos vías, else para
 
     var coke=3, powerade=2.9, fanta=2.7, pepsi=2.5, fuzeTea= 2.1, sprite=2.0, agua=1.5,;
     var dinero=prompt("Hola, por favor ingresa cuantos dólares tienes?");
-    if(dinero>=coke){
+    var vuelto=parseInt(dinero);
+    if(vuelto>=coke){
         alert(`En realidad te alcanza para todos los refrescos, tu cambio sería el siguiente:`);
-        alert(`coke: ${dinero-3} powerade: ${dinero-2.9} fanta: ${dinero-2.7} pepsi: ${dinero-2.5} Fuze Tea: ${dinero-2.1} sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
-    }else if(dinero<=powerade){
+        alert(`coke: ${vuelto-3} powerade: ${vuelto-2.9} fanta: ${vuelto-2.7} pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    }else if(vuelto<=powerade){
         alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
-        alert(`powerade: ${dinero-2.9} fanta: ${dinero-2.7} pepsi: ${dinero-2.5} Fuze Tea: ${dinero-2.1} sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
-    }else if(dinero<=fanta){
+        alert(`powerade: ${vuelto-2.9} fanta: ${vuelto-2.7} pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    }else if(vuelto<=fanta){
         alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
-        alert(`fanta: ${dinero-2.7} pepsi: ${dinero-2.5} Fuze Tea: ${dinero-2.1} sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
-    }else if(dinero<=pepsi){
+        alert(`fanta: ${vuelto-2.7} pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    }else if(vuelto<=pepsi){
         alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
-        alert(`pepsi: ${dinero-2.5} Fuze Tea: ${dinero-2.1} sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
-    }else if(dinero<=fuzeTea){
+        alert(`pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    }else if(vuelto<=fuzeTea){
         alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
-        alert(`Fuze Tea: ${dinero-2.1} sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
-    }else if(dinero<=sprite){
+        alert(`Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    }else if(vuelto<=sprite){
         alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
-        alert(`sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
-    }else if(dinero<=agua){
+        alert(`sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    }else if(vuelto<=agua){
         alert(`En realidad te alcanza solo para el agua, tu cambio sería el siguiente:`);
-        alert(`agua: ${dinero-1.5}`);
+        alert(`agua: ${vuelto-1.5}`);
     }else{
         alert(`En realidad no te alcanza para nada :c`);
     }
