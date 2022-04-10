@@ -15,6 +15,15 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
     * [Out de datos](#id8)
 * [Operadores de asignación](#id9)
 * [Operadores Aritméticos](#id10)
+* [Concatenación](#id11)
+* [Operadores de comparación](#id12)
+    * [Operadores Booleanos](#id13)
+* [Camel Case](#id14)
+* [Condicionales](#id15)
+    * [IF](#id16)
+    * [ELSE](#id17)
+    * [ELSE IF](#id18)
+* [Problemas del mundo real](#id19)
 
 ## Indice Capitulo 2
 
@@ -289,7 +298,7 @@ El operador DesIdentidad compara dos valores priorizando el tipo de dato:
 >Resultado: true
 
 
-### Comparadores booleanos
+### Comparadores booleanos <a name="id13"></a>
 
 Los comparadores booleanos son similares a los comparadores normales, sin embargo los comparadores booleanos solo pueden comparar valores booleanos, ya sea que provengan de una variable con un dato booleano o de una expresión previamente comparada.
 
@@ -301,7 +310,7 @@ Tomando en cuenta que:
     let d=92;
     let e=91;
     let f=true;
-    let g=false
+    let g=false;
 
 | Operador | Ejemplo | Valor |
 |----------|---------|-------|
@@ -315,7 +324,7 @@ Como lo dije antes, los operandos pueden venir desde una variable con un dato bo
     let resultado1=(a<b||b<c)&&(!a&&e!=d);
 >Resultado: False
 
-## Camel case <a name="id13"></a>
+## Camel case <a name="id14"></a>
 
 El camel case o tipado de tipo camello es el paradigma con el cual según las buenas prácticas debería funcionar JS, tanto para las variables como para las funciones. Consiste en que si nuestra función / variable tiene dentro más de una palabra util para describir su funcionamiento se va a escribir de la siguiente manera:
 
@@ -331,3 +340,107 @@ Imaginemos que necesitamos escribir la función para que un perro azul maulle...
         let perroAzulMaullido;
     }
 Como podemos observar la primera palabra aparece en minusculas, la segunda con la letra inicial en mayúscula y lo semás en minuscula, así mismo con la siguiente palabra, y d etener más deberían seguir el mismo patrón para poder ser legibles facilmente y rápido ya que como sabemos, más del 80% del tiempo d eprogramación leemos código en vez de redactar.
+
+## Condicionales <a name="id15"></a>
+
+Los condicionales son conjuntos de instrucciones agrupadas en un bloque de código que se ejecutan si y solo si la sentencia de control es verdadera. Es decir que tenemos que dar una sentencia de control con [Operadores de comparación](#id12) y/o con [Operadores aritméticos](#id10) De esta forma si la sentencia es verdadera el bloque de código asignado va a ser ejecutado, si la sentencia de control es falsa el bloque de código no se va a ejecutar (El bloque de código es todo lo que esté dentro de {   }  ).
+
+Estructura básica de un condicional:
+
+    condicional {
+
+    }
+
+### Condicional IF <a name="id16"></a>
+
+El condicional IF se puede leer tal cual lo leeriamos en inglés IF=SI, es decir, SI( ) es verdadero entonces { }
+
+Ejemplo práctico:
+
+    let x=10;
+    let y=5;
+    let a=12;
+    let b=24;
+    let c=25;
+    let d=92;
+    let e=91;
+    let f=true;
+    let g=false;
+
+    if(x>a){
+        alert("La sentencia es cierta");
+    }
+    if(x>=y){
+        alert("La sentencia es cierta");
+    }
+    if(((x+y)<=b--)&&(d===e++||(b+c>e/2)){
+        alert("La sentencia es cierta");
+    }
+
+### Condicional else <a name="id17"></a>
+
+El condicional IF es un condicional simple, es decir que se va a ejecutar si y solo si es verdad, sin embargo si la sentencia regresa un false, podemos acompañar el bloque de código con el condicional else. 
+
+    var nombre="Rodrigo Flores";
+    if(nombre == "Rodrigo"){
+        alert("La sentencia es cierta");
+    }else{
+        alert("La sentencia es incorrecta");
+    }
+
+>Ejemplo del mundo real:
+Imaginemos que para la auteticación sencilla de un sistema de login requerimos comparar el dato igresado por un usuario con un dato de una base de datos que previamente ya lo guardamos en la variable "validacion".
+
+    var validacion="Rodrigo";
+    var nombre=prmpt("Por favor, inserte su nombre: ");
+    if(nombre===validacion){
+        alert(`Bienvenido ${validacion} ¿como estás el día de hoy?`);
+    }else{
+        alert(`Disculpe ${nombre} su usuario es incorrecto, por favor ingrese un usuario válido`);
+    }
+
+### Condicional else if <a name="id18"></a>
+
+Si el condicional if devuelve un valor false podremos tomar dos vías, else para probar cualquier otra opción que no sea previamente evaluada como en el ejemplo 1 que al equivocarse el usuario no importa lo que pase después, queremos hacerle saber que se ha equivocado. Pero ahora, imaginemos que nuestra  plataforma de acceso puede ser para más de un usuario, por lo que tendríamos que hacer más de una validación de la siguiente manera:
+
+    var validacion1="Rodrigo";
+    var validación2="Juan";
+    var nombre=prmpt("Por favor, inserte su nombre: ");
+    if(nombre===validacion1){
+        alert(`Bienvenido ${validacion1} ¿como estás el día de hoy?`);
+    }else if(nombre===validacion2){
+        alert(`Bienvenido ${validacion2} ¿como estás el día de hoy?`);
+    }else{
+        alert(`Disculpe ${nombre} su usuario es incorrecto, por favor ingrese un usuario válido`);
+    }
+
+## Problemas del mundo real <a name="id19"></a>
+
+>Necesitamos hacer un programa que nos indique que refresco podemos comparar en función de los precios dados en una tienda. El programa recibirá la entrada de texto y deberá evaluar para qué refresco nos alcanza (empezando por el más caro) y mostrarnos una lista de los que podemos comprar, aparte de indicarnos el cambio o vuelto que recibiríamos de elegir cualquiera.
+
+    var coke=3, powerade=2.9, fanta=2.7, pepsi=2.5, fuzeTea= 2.1, sprite=2.0, agua=1.5,;
+    var dinero=prompt("Hola, por favor ingresa cuantos dólares tienes?");
+    if(dinero>=coke){
+        alert(`En realidad te alcanza para todos los refrescos, tu cambio sería el siguiente:`);
+        alert(`coke: ${dinero-3} powerade: ${dinero-2.9} fanta: ${dinero-2.7} pepsi: ${dinero-2.5} Fuze Tea: ${dinero-2.1} sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
+    }else if(dinero<=powerade){
+        alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
+        alert(`powerade: ${dinero-2.9} fanta: ${dinero-2.7} pepsi: ${dinero-2.5} Fuze Tea: ${dinero-2.1} sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
+    }else if(dinero<=fanta){
+        alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
+        alert(`fanta: ${dinero-2.7} pepsi: ${dinero-2.5} Fuze Tea: ${dinero-2.1} sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
+    }else if(dinero<=pepsi){
+        alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
+        alert(`pepsi: ${dinero-2.5} Fuze Tea: ${dinero-2.1} sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
+    }else if(dinero<=fuzeTea){
+        alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
+        alert(`Fuze Tea: ${dinero-2.1} sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
+    }else if(dinero<=sprite){
+        alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
+        alert(`sprite: ${dinero-2.0} agua: ${dinero-1.5}`);
+    }else if(dinero<=agua){
+        alert(`En realidad te alcanza solo para el agua, tu cambio sería el siguiente:`);
+        alert(`agua: ${dinero-1.5}`);
+    }else{
+        alert(`En realidad no te alcanza para nada :c`);
+    }
