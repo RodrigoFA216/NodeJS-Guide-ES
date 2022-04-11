@@ -26,7 +26,9 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
 * [Problemas del mundo real](#id19)
 
 ## Indice Capitulo 2
-
+* [Arrays](./Cap2JS.md)
+* [Arrays Asociativos](./Cap2JS.md)
+    * [Implementación](./Cap2JS.md)
 
 ## Diferencias entre JavaScript y NodeJS <a name="id1"></a>
 
