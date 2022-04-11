@@ -142,7 +142,7 @@ Desde JS se puede hacer con una BuiltIn Function como lo es prompt(), ahora, pro
 
 Prompt puede tener un argumento de texto que sea de la siguiente forma
 
-    prompt("< texto >")
+    prompt("< texto >");
 
 Lo que se verá en tu sitio o docuemto será una ventana emergente que tendrá el texto ingresado, en este caso sería
 ![If you see this... something go wrong](./Prompt.png)
@@ -393,6 +393,8 @@ El condicional IF es un condicional simple, es decir que se va a ejecutar si y s
 >Ejemplo del mundo real:
 Imaginemos que para la auteticación sencilla de un sistema de login requerimos comparar el dato igresado por un usuario con un dato de una base de datos que previamente ya lo guardamos en la variable "validacion".
 
+El resultado de esto también lo puedes encontrar en el [Ejercicio 1](./Ejercicio1.js)
+
     var validacion="Rodrigo";
     var nombre=prmpt("Por favor, inserte su nombre: ");
     if(nombre===validacion){
@@ -420,7 +422,9 @@ Si el condicional if devuelve un valor false podremos tomar dos vías, else para
 
 >Necesitamos hacer un programa que nos indique que refresco podemos comparar en función de los precios dados en una tienda. El programa recibirá la entrada de texto y deberá evaluar para qué refresco nos alcanza (empezando por el más caro) y mostrarnos una lista de los que podemos comprar, aparte de indicarnos el cambio o vuelto que recibiríamos de elegir cualquiera.
 
-    var coke=3, powerade=2.9, fanta=2.7, pepsi=2.5, fuzeTea= 2.1, sprite=2.0, agua=1.5,;
+[El resultado lo puedes encontrar en: ](./Ejercicio2.js)
+
+    var coke=3, powerade=2.9, fanta=2.7, pepsi=2.5, fuzeTea= 2.1, sprite=2.0, agua=1.5;
     var dinero=prompt("Hola, por favor ingresa cuantos dólares tienes?");
     var vuelto=parseInt(dinero);
     if(vuelto>=coke){
