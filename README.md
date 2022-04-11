@@ -117,7 +117,7 @@ Existe otro tipo de tener una variable vacía a propósito sin hacer uso de no d
 
 Un ultimo tipo de dato nativo es el NaN, no es que ses especificamente un tipo de dato pero si se genera como error o mensaje en el prompt cuando queremos operar de manera normal un string con un numero por ejemplo. Para ejemplificar mejor prueba el siguiente código:
 
-    let numeor3=2;
+    let numero3=2;
     let string2="Doge";
     alert(numero3*string2);
 
@@ -218,7 +218,7 @@ Como tal la concatenación es unir dos strings. No hay más y no hay menos. Por 
     let saludo="Hola Juanjo";
     let pregunta="¿cómo estás?";
     let frase=saludo+pregunta;
-    docuemnt.write(frase);
+    document.write(frase);
 
 Ahora, pongamos el ejemplo de que quiero concatenar numeros, no sumarlos. 
 
@@ -396,7 +396,7 @@ Imaginemos que para la auteticación sencilla de un sistema de login requerimos 
 El resultado de esto también lo puedes encontrar en el [Ejercicio 1](./Ejercicio1.js)
 
     var validacion="Rodrigo";
-    var nombre=prmpt("Por favor, inserte su nombre: ");
+    var nombre=prompt("Por favor, inserte su nombre: ");
     if(nombre===validacion){
         alert(`Bienvenido ${validacion} ¿como estás el día de hoy?`);
     }else{
@@ -408,7 +408,7 @@ El resultado de esto también lo puedes encontrar en el [Ejercicio 1](./Ejercici
 Si el condicional if devuelve un valor false podremos tomar dos vías, else para probar cualquier otra opción que no sea previamente evaluada como en el ejemplo 1 que al equivocarse el usuario no importa lo que pase después, queremos hacerle saber que se ha equivocado. Pero ahora, imaginemos que nuestra  plataforma de acceso puede ser para más de un usuario, por lo que tendríamos que hacer más de una validación de la siguiente manera:
 
     var validacion1="Rodrigo";
-    var validación2="Juan";
+    var validacion2="Juan";
     var nombre=prmpt("Por favor, inserte su nombre: ");
     if(nombre===validacion1){
         alert(`Bienvenido ${validacion1} ¿como estás el día de hoy?`);

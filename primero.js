@@ -8,7 +8,7 @@ alert(numero); //UNDEFINED
 let numero2 = null;
 alert(numero); //NULL
 
-let numeor3 = 2;
+let numero3 = 2;
 let string2 = "Doge";
 alert(numero3 * string2); //NAN
 
@@ -44,7 +44,7 @@ document.write(`La adición unaria de ${x}  +${x} es ${+x}`);
 let saludo = "Hola Juanjo";
 let pregunta = "¿cómo estás?";
 let frase = saludo + pregunta;
-docuemnt.write(frase);
+document.write(frase);
 
 //FORZAR STRING
 let numero1 = 5;
@@ -129,7 +129,7 @@ if (nombre == "Rodrigo") {
 //EJEMPLO DEL MUNDO REAL EJERCICIO 1
 
 var validacion = "Rodrigo";
-nombre = prmpt("Por favor, inserte su nombre: ");
+nombre = prompt("Por favor, inserte su nombre: ");
 if (nombre === validacion) {
     alert(`Bienvenido ${validacion} ¿como estás el día de hoy?`);
 } else {
@@ -138,8 +138,8 @@ if (nombre === validacion) {
 
 //CONDICIONAL ELSE IF
 var validacion1 = "Rodrigo";
-var validación2 = "Juan";
-nombre = prmpt("Por favor, inserte su nombre: ");
+var validacion2 = "Juan";
+nombre = prompt("Por favor, inserte su nombre: ");
 if (nombre === validacion1) {
     alert(`Bienvenido ${validacion1} ¿como estás el día de hoy?`);
 } else if (nombre === validacion2) {
@@ -161,26 +161,26 @@ var coke = 3,
 var dinero = prompt("Hola, por favor ingresa cuantos dólares tienes?");
 var vuelto = parseInt(dinero);
 if (vuelto >= coke) {
-    alert(`En realidad te alcanza para todos los refrescos, tu cambio sería el siguiente:`);
-    alert(`coke: ${vuelto-3} powerade: ${vuelto-2.9} fanta: ${vuelto-2.7} pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    document.write(`<br>En realidad te alcanza para todos los refrescos, tu cambio sería el siguiente:`);
+    document.write(`<br>coke: ${vuelto-3} powerade: ${vuelto-2.9} fanta: ${vuelto-2.7} pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
 } else if (vuelto <= powerade) {
-    alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
-    alert(`powerade: ${vuelto-2.9} fanta: ${vuelto-2.7} pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    document.write(`<br>En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
+    document.write(`<br>powerade: ${vuelto-2.9} fanta: ${vuelto-2.7} pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
 } else if (vuelto <= fanta) {
-    alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
-    alert(`fanta: ${vuelto-2.7} pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    document.write(`<br>En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
+    document.write(`<br>fanta: ${vuelto-2.7} pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
 } else if (vuelto <= pepsi) {
-    alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
-    alert(`pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    document.write(`<br>En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
+    document.write(`<br>pepsi: ${vuelto-2.5} Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
 } else if (vuelto <= fuzeTea) {
-    alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
-    alert(`Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    document.write(`<br>En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
+    document.write(`<br>Fuze Tea: ${vuelto-2.1} sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
 } else if (vuelto <= sprite) {
-    alert(`En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
-    alert(`sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
+    document.write(`<br>En realidad te alcanza para casi todos los refrescos, tu cambio sería el siguiente:`);
+    document.write(`<br>sprite: ${vuelto-2.0} agua: ${vuelto-1.5}`);
 } else if (vuelto <= agua) {
-    alert(`En realidad te alcanza solo para el agua, tu cambio sería el siguiente:`);
-    alert(`agua: ${vuelto-1.5}`);
+    document.write(`<br>En realidad te alcanza solo para el agua, tu cambio sería el siguiente:`);
+    document.write(`<br>agua: ${vuelto-1.5}`);
 } else {
-    alert(`En realidad no te alcanza para nada :c`);
+    document.write(`<br>En realidad no te alcanza para nada :c`);
 }
