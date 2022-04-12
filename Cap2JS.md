@@ -3,6 +3,13 @@
 * [Arrays](#id20)
 * [Arrays Asociativos](#id21)
     * [Implementación](#id22)
+* [Bucles e iteración](#id23)
+    * [Do While](#id24)
+    * [While](#id24)
+        * [Do While](#id24)
+* [For](#id25)
+
+* []()
 
 ## Arrays <a name="id20"></a>
 
@@ -41,7 +48,11 @@ Para acceder a ellos podemos hacerlo con los indices, e incluso operarlos dentro
 
 ## Arrays asociativos <a name="id21"></a>
 
-Los arrays asociativos a diferencia de los arrays normales para acceder a un indice o casilla la etiqueta o indice de cada casilla requiere de un dato de tipo string, no pueden ser números y su sintaxis es la siguiente:
+Los arrays asociativos a diferencia de los arrays normales para acceder a un indice o casilla la etiqueta o indice de cada casilla requiere de un dato de tipo string.
+
+![If you see this... something go wrong](./Array_asociativo.png)
+
+No pueden ser números y un ejemplo de su sintaxis es la siguiente:
 
     let dni={
         nombre: "Rodrigo",
@@ -69,4 +80,51 @@ Implementemos una impresión en pantalla con los datos de nuestro array asociati
         Y mi estado de vida actual es: <b>${estado}</b> <br>`;
     document.write(frase);
 
-Intentalo ahora co tus datos.
+Intentalo ahora con tus datos.
+
+## Bucles e iteraciones <a name="id23"></a>
+
+Los bucles en programación son sentencias de código muy parecidas al if, sin embargo el if una vez que se pregunta s es o no verdadero sigue con el código de forma secuencial, los bucles cuando preguntan si la sentencia se cumple y se ejecuta el código una vez, esta sentencia va a preguntar de nuevo si cumple la sentencia, si sigue cumpliendo la sentencia entonces volverá a ejecutar el código una y otra vez hasta que se deje e cumplir la sentencia
+
+![If you see this... something go wrong](./If%20y%20While.png)
+
+### Bucle while <a name="id24"></a>
+
+Como ya lo había dicho el bucle while preguntará al final de cada ejecución si la condición se sigue cumpliendo o no y ejecutará de nuevo el código. Este es un ejemplo del flujo de datos dentro del ciclo específico.
+
+![If you see this... something go wrong](./Flujo%20de%20atencion%20if%20y%20while.png)
+
+La forma de declarar un while es la misma que la de un if
+
+    while(sentencia==true){
+        //bloque de código a ejecutar
+    }
+
+Ejemplo: 
+>Cree un programa que imprima el conteo del 1 al 10
+
+    let iterador=0;
+    let out=0;
+    while(iterador<=10){
+        out=`${iterador}<br>`;
+        document.write(out);
+        iterador++;
+    }
+
+### Bucle do while <a name="id23"></a>
+
+Un derivado del bucle while es el bloque dowhile, tiene una sintaxis y acomodo muy parecido al bloque while, solo que el bloque do while lo que nos va a permitir hacer es primero ejecutar el código, y luego verificar que la sentencia se cumpla. 
+
+![If you see this... something go wrong](./Dowhile%20and%20while.png)
+![If you see this... something go wrong](./While%20do%20while%202.png)
+
+Ejemplo de tipado y uso de un dowhile
+
+    let iterador=0;
+    let out=0;
+    do{
+        document.write(iterador + "<br>");
+        iterador++;
+    }while(numero>6)
+
+¿Por qué este código nos imprime un 0 a pesar de que la sentencia numero>6 no es cierta? por que el do while como dije, primero ejecuta el código y luego pregunta si la condición se cumple.
