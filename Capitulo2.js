@@ -30,3 +30,20 @@ let frase=`
     Mido <b>${talla}</b> <br>
     Y mi estado de vida actual es: <b>${estado}</b> <br>`;
 document.write(frase);
+//WHILE
+// while(sentencia==true){
+//     //bloque de código a ejecutar
+// }
+let iterador=0;
+let out=0;
+while(iterador<=10){
+    out=`${iterador}<br>`;
+    document.write(out);
+    iterador++;
+}
+iterador=0;
+out=0;
+do{
+    document.write(iterador + "<br>");
+    iterador++;
+}while(numero>6)
