@@ -47,3 +47,12 @@ do{
     document.write(iterador + "<br>");
     iterador++;
 }while(numero>6)
+
+//FOR
+for(let i=0 ; i<6 ; i++){
+    document.write(i+"<br>")
+}
+
+for(var i = Things.length - 1; i >= 0; i--){
+    Things[i];
+}

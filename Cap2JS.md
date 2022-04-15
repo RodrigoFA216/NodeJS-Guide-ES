@@ -4,10 +4,9 @@
 * [Arrays Asociativos](#id21)
     * [Implementación](#id22)
 * [Bucles e iteración](#id23)
-    * [Do While](#id24)
     * [While](#id24)
-        * [Do While](#id24)
-* [For](#id25)
+    * [Do While](#id25)
+    * [For](#id26)
 
 * []()
 
@@ -111,7 +110,7 @@ Ejemplo:
         iterador++;
     }
 
-### Bucle do while <a name="id23"></a>
+### Bucle do while <a name="id25"></a>
 
 Un derivado del bucle while es el bloque dowhile, tiene una sintaxis y acomodo muy parecido al bloque while, solo que el bloque do while lo que nos va a permitir hacer es primero ejecutar el código, y luego verificar que la sentencia se cumpla. 
 
@@ -129,7 +128,7 @@ Ejemplo de tipado y uso de un dowhile
 
 ¿Por qué este código nos imprime un 0 a pesar de que la sentencia numero>6 no es cierta? por que el do while como dije, primero ejecuta el código y luego pregunta si la condición se cumple.
 
-## Bucle for <a name="id23"></a>
+## Bucle for <a name="id26"></a>
 
 El bucle for a diferencia de los demás bucles al momento de declararlo se le indica un iterador un rango y una forma de hacer crecer el iterador, Es decir, le declaramos le inicializamos y le iteramos.
 
@@ -142,7 +141,7 @@ Pt 3. Iteración (aumento o decremento)
         document.write(i+"<br>")
     }
 
-
+La forma estandar o actualizada es la siguiente:
 
     for(var i = Things.length - 1; i >= 0; i--){
         Things[i];
