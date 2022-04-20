@@ -7,6 +7,11 @@
     * [While](#id24)
     * [Do While](#id25)
     * [For](#id26)
+        * [Continue](#id27)
+        * [Break](#id28)
+    * [For in y For Of](#id29)
+    * [Labels](#id30)
+* [Funciones](#id31)
 
 * []()
 
@@ -146,4 +151,135 @@ La forma estandar o actualizada es la siguiente:
     for(var i = Things.length - 1; i >= 0; i--){
         Things[i];
     }
+
+El bucle for preguntará para cada iteración el valor actual de la sentencia condicional y va a ejecutar el código asignado hasta que la condicional no se cumpla, sin embargo no modifica los valores preasignados. Por ejemplo:
+
+    i=20
+    for(let i=6;i>=0:i--){
+        document.write(i+"<br>");
+    }
+    document.write(i);
+
+El valor de i al terminar el bucle sigue siendo de 20 incluso cuando después de iterar el for y modificar los valores de i
+
+Sin embargo gracias a que JS es un lenguaje de tipo dinámico podemos ver la modificación de la variable i a lo largo del for con el siguiente código:
+
+    let i; 
+    for(i=6;i>=0:i--){
+        document.write(i+"<br>");
+    }
+    document.write(i);
+
+Se está declarando fuera del for, dentro se está inicializando y se ejecuta, fuera del for tenemos la ultima modificación que se le hizo con el -1 que es cuando la variable fue modificada por el operador i-- pero ya no fue válida para la sentencia de control.
+
+De nuevo gracias a que JS es dinámico podemos hacer lo siguiente:
+
+    let i=6;
+    for(i;i>=0:i--){
+        document.write(i+"<br>");//(X)
+    }
+    document.write(i);
+
+"Vas a usar la variable i y ejecutarás el código (X) hasta que la condición i>=0 no se cumpla, en cada iteración modificarás i de la forma i--" -El for en palabras.
+
+(X)= Imprime en pantalla el contenido de i.
+
+### Break <a name="id27"></a>
+
+Break es una sentencia que nos arroja un false en cualquier punto de una iteración, es decir que niega el estado true de la comparación. Ejemplo práctico:
+
+    for(let i=0;i<=20;i++){
+        document.write(i+"<br>");//(X)
+        if(i==12){
+            break
+        }
+    }
+
+"Vas a usar la variable i y ejecutarás el código (X) hasta que la condición i<=0 no se cumpla, en cada iteración modificarás i de la forma i++"
+
+(X)= Imprime en pantalla el contenido de i y evalúa si i==12, si i==12 es true deja de hacer todo y espera instrucciones.
+
+### Continue <a name="id28"></a>
+
+Continue funciona similar a break, sin embargo no le pide a la consola que deje de hacer todo lo que está haciendo si no que salte una iteración. Ejemplo práctico:
+
+    for(let i=0;i<=20;i++){
+        document.write(i+"<br>");//(X)
+        if(i==12){
+            continue;
+        }
+    }
+
+"Vas a usar la variable i y ejecutarás el código (X) hasta que la condición i<=0 no se cumpla, en cada iteración modificarás i de la forma i++"
+
+(X)= Imprime en pantalla el contenido de i y evalúa si i==12, si i==12 es true salta una iteración y continúa con lo que estabas.
+
+## For IN y For OF <a name="id29"></a>
+
+For in ahorra la declaración y la condicional del for, aparte que lo hace más sencillo por que es ascendente, sien embargo tienen un poco de similitudes. 
+
+En for in la variable de iteración tendrá el valor asignado en cada iteración igual al indice del dato comparado.
+
+En for of la variable de iteración tendrá el valor asignado en cada iteración igual al valor del indice 
+
+Ejemplo práctico:
+
+    let animales=["Gato","Perro","Conejo","Ave"];
+    for(animal in animales){
+        document.write(animal+"<br>");//devuelve la posición
+    }
+    document.write("<br>");
+    for(animal on animales){
+        document.write(animal+"<br>");//devuelve el valor de la posición
+    }
+
+Mostrar elementos con for in:
+
+    let animales=["Gato","Perro","Conejo","Ave"];
+    for(animal in animales){
+        document.write(animales[animal]+"<br>");
+    } 
+
+## Labels <a name="id30"></a>
+
+Hagamos una simple recapitulación de lo aprendido: 
+
+Diseñe un programa que recorra los siguientes dos arrays:
+
+    array1=["Mango","Plátano","Mamey"];
+    array2=["Melón","Naranja",array1,"Mandarina"];
+
+Ejemplo propuesto:
+
+    for(let array in array2){
+        if(array==2){
+            for(let array of array1){
+                document.write(array+"<br>"); //(X)
+            }
+        }else{
+            document.write(array2[array]+"<br>");
+        }
+    }
+
+Ahora, que pasaría si deseo terminar ambos bucles for en la ubicación de la bandera (X)? Intenta escribiendo break o continue. 
+
+Para poder solucionar o especificar esto necesitamos usar las etiquetas o labels, también se les dice banderas en otros lenguajes como C++:
+
+Para ejemplificarlo puedes reemplazar la linea de la bandera (X) con "break forUno" o con "continue forUno"
+
+    forUno:
+    for(let array in array2){
+        if(array==2){
+            for(let array of array1){
+                //(X);
+                document.write(array+"<br>"); 
+            }
+        }else{
+            document.write(array2[array]+"<br>");
+        }
+    }
+
+## Funciones <a name="id"></a>
+
+
 

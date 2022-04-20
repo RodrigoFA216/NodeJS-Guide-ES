@@ -3,6 +3,7 @@
 let T=prompt("Por favor ingrese el valor de T");
 let P=prompt("Por favor ingrese el valor de P");
 let N=prompt("Por favor ingrese el valor de N");
+T=parseInt();
 let primero;
 let segundo;
 let ecuacion1=((T/P)**N);

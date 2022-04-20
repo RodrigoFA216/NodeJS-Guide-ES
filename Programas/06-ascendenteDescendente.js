@@ -3,6 +3,9 @@
 let uno=prompt("Inserte el primer numero por favor");
 let dos=prompt("Inserte el segundo numero por favor");
 let tres=prompt("Inserte el tercer numero por favor");
+uno=parseInt(uno);
+dos=parseInt(dos);
+tres=parseInt(tres);
 if (uno>dos&&dos>tres) {
     alert("Los números están en orden ascendente");
 }else if (uno>dos&&dos<tres){

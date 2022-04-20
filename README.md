@@ -33,6 +33,11 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
     * [While](./Cap2JS.md)
     * [Do While](./Cap2JS.md)
     * [For](./Cap2JS.md)
+        * [Continue](./Cap2JS.md)
+        * [Break](./Cap2JS.md)
+    * [For in y For Of](./Cap2JS.md)
+    * [Labels](./Cap2JS.md)
+* [Funciones](./Cap2JS.md)
 
 ## Diferencias entre JavaScript y NodeJS <a name="id1"></a>
 
