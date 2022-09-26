@@ -2,7 +2,7 @@
 
 Javascript es un lenguaje de programación interpretado que puede correr en web, es dinámico, multiparadigma y tiene un tipado débil, aquí puedes ver una imagen representativa de cómo son los tipos de tipado de los distintos lenguajes de programación... HTML y CSS no son lenguajes, lo siento. 
 
-![If you look this... something go wrong](./tipos%20de%20tipados.png)
+![If you look this... something go wrong](./Imagenes/tipos%20de%20tipados.png)
 
 ## Indice Capitulo 1
 * [Diferencias entre JS y NodeJS](#id1)
@@ -44,10 +44,10 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
 | JavaScript        | NodeJS      |
 |-------------------|-------------|
 | Scripts en web | Entorno de ejecución |
-| Solo se ejecuta en navegadores | MultiparadigmaSe ejecuta fuera de los navegadores |
+| Solo se ejecuta en navegadores | Se ejecuta fuera de los navegadores |
 | Utiliza recursos del cliente | Utiliza recursos del servidor |
-| Puede agregar HTML | No agrega HTML |
-| Puede ejecutarse en el navegador | Necesita un motor para ejecutarse (V8) |
+| Puede agregar HTML | Envía desde el backend documentos HTML |
+| Se ejecuta/interpreta en el navegador | Necesita un motor para ejecutarse (V8) |
 | Es Front End | Es Back End |
 | Los marcos o módulos son TypeScript Ramda o React | Los marcos o módulos son Express y se instalan desde npm |
 | Es la versión mejorada del script ECMA que usa V8 de Chrome escrito en C++  | NodeJS está escrito en C, C++ y JavaScript |
@@ -154,7 +154,7 @@ Prompt puede tener un argumento de texto que sea de la siguiente forma
     prompt("< texto >");
 
 Lo que se verá en tu sitio o docuemto será una ventana emergente que tendrá el texto ingresado, en este caso sería
-![If you see this... something go wrong](./Prompt.png)
+![If you see this... something go wrong](./Imagenes/Prompt.png)
 
 Por ejemplo, para obtener de forma exitosa la inserción del usuario cuando le estamos podiendo su nombre tedríamos que hacer el siguiente código:
 
@@ -170,7 +170,7 @@ Alert va a desplegar una ventana flotante al igual que la ventana de prompt() pa
     let variable=prompt("Introduce un texto");
     alert("El texto introducido es: " + variable);
 
-La BuiltIn Function document.write() funciona similarmente al alert, sin embargo document.write() lo imprimer dentro del documento en el fondo de todo de no especificarse dónde va a ser introducido. Podemos jugar con esto si visualizamos el [Documento](/index.html) que está dentro de este repositorio
+La BuiltIn Function document.write() funciona similarmente al alert, sin embargo document.write() lo imprimer dentro del documento en el fondo de todo de no especificarse dónde va a ser introducido. Podemos jugar con esto si visualizamos el [Documento](./index.html) que está dentro de este repositorio
 
     let variable=prompt("Introduce un texto");
     document.write("el texto introducido es: " + variable);
@@ -402,7 +402,7 @@ El condicional IF es un condicional simple, es decir que se va a ejecutar si y s
 >Ejemplo del mundo real:
 Imaginemos que para la auteticación sencilla de un sistema de login requerimos comparar el dato igresado por un usuario con un dato de una base de datos que previamente ya lo guardamos en la variable "validacion".
 
-El resultado de esto también lo puedes encontrar en el [Ejercicio 1](./Ejercicio1.js)
+El resultado de esto también lo puedes encontrar en el [Ejercicio 1](./Capitulos/Ejercicios/Ejercicio1.js)
 
     var validacion="Rodrigo";
     var nombre=prompt("Por favor, inserte su nombre: ");
@@ -431,7 +431,7 @@ Si el condicional if devuelve un valor false podremos tomar dos vías, else para
 
 >Necesitamos hacer un programa que nos indique que refresco podemos comparar en función de los precios dados en una tienda. El programa recibirá la entrada de texto y deberá evaluar para qué refresco nos alcanza (empezando por el más caro) y mostrarnos una lista de los que podemos comprar, aparte de indicarnos el cambio o vuelto que recibiríamos de elegir cualquiera.
 
-[El resultado lo puedes encontrar en: ](./Ejercicio2.js)
+[El resultado lo puedes encontrar en: ](./Capitulos/Ejercicios/Ejercicio2.js)
 
     var coke=3, powerade=2.9, fanta=2.7, pepsi=2.5, fuzeTea= 2.1, sprite=2.0, agua=1.5;
     var dinero=prompt("Hola, por favor ingresa cuantos dólares tienes?");

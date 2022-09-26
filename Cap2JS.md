@@ -12,6 +12,9 @@
     * [For in y For Of](#id29)
     * [Labels](#id30)
 * [Funciones](#id31)
+    * [Parámetros](#id32)
+    * [Funciones Flecha](#id33)
+* [Problema del mundo real](#id34)
 
 * []()
 
@@ -279,7 +282,197 @@ Para ejemplificarlo puedes reemplazar la linea de la bandera (X) con "break forU
         }
     }
 
-## Funciones <a name="id"></a>
+## Funciones <a name="id31"></a>
+
+Todas las funciones tienen 2 características, la declaración y la implementacion 
+
+Las funciones se declaran en JS con la palabra function, lo que toma después es el nombre con el cual se va a llamar la función, sin embargo no puede ser una palabra reservada ni una variable, además que este identificador no debe contener espacios ni caracteres especiales para evitar errores.
+
+Un ejemplo de una declaraciónde función es el siguiente:
+
+>Declaración
+
+    function sumar(){
+        let a=3;
+        let b=4;
+        let resultado=0;
+        resultado=a+b;
+    }
+
+>Implementación
+
+    sumar();
+
+Propiamente la función ya hace la suma sin embargo no devuelve ningun valor y siempre hace la misma suma independeintemente de cuantas veces le mandemos llamar.
+
+>Puede intentar hacer la implementación de la siguiente manera:
+
+    variable=sumar();
+    document.write(variable);
+
+Verá que lo que escribe es undefined devido a que no contienen ningún tipo de dato que retorne esta función
+
+Para que este bloque de codigo llamado función nos regrese un valor específico se usa la palabra reservada return, y es lo que la funcion nos devuelve luego de hacer su proceso. Por ejemplo:
+
+>Declaración
+
+    function saludar(){
+        alert("Hola");
+        return "la función se ejecutó correctamente";
+    }
+
+>Implementación
+
+    let saludo=saludar();
+    document.write(saludo);
 
 
+como lo que escribe es la variable saludo, y esta en su interior tiene el resultado de la función saludar, y esta devuelve "la función se ejecutó correctamente" en el documento deberías ver:
 
+    "la función se ejecutó correctamente"
+
+>El return también termina de ejecutar las funciones tal cual lo hace un break con in for como lo hicimos antes
+
+### Parámetros (función con paso y retorno) <a name="id32"></a>
+
+Como lo dije antes, una función que siempre haga lo mismo es util pero no es optima, lo óptmo es que tengamos una función que nos ayude a realizar cosas distintas o variables dependiendo de lo que nosotros queramos introducir a ellas.
+
+Para eso son los parámetros, estos son variables que definimos en los paréntesis de las funciones y que nos sirven para poder generar el proceso de las funciones con multiples variables o datos a la hora de introducirlos y no necesariamente volviendo a escribir el proceso de la función. Por ejemplo:
+
+>Declaración
+
+    function suma(num1, num2){
+        let res=num1+num2;
+        document.write(res);
+        document.write("<br>");
+        return res;
+    }
+
+>Implementación
+
+    suma(12,15);
+    suma(15,19);
+    suma(30,2);
+
+Ahora como podemos observar la implementación puede cambiar ya que no importa cuantas veces llamemos la función suma, siempre va a sumar los numeros que mandemos como PARÁMETROS. 
+
+¡Cuidado con la implementación!
+Prueba implementando la función suma de la siguiente forma:
+
+    suma(12);
+
+El resultado debería ser NaN ya que estamos sumando 1 con un espacio en memoria, y como lo vimos en el capitulo uno cuando operas un numero con algo que no es un numero devuelve un NaN.
+
+>Scope
+
+El alcance o scope que van a tener estas variables es solamente n la función, es decir que si queremos utilizar la variable y el valkor que contiene en determinado momento la variable num1 tiene que ser exclusivamente dentro de la función, no podemos operar con la variable en ningun momento si se está fuera de la función. para ejemplificar esto prueba con el siguiente codigo:
+
+    function suma(num1, num2){
+        let res=num1+num2;
+        document.write(res);
+        document.write("<br>");
+        return res;
+    }
+    suma(12,15);
+    document.write(num1);
+
+Abre la consola: "num1 is not defined"
+
+El paso de parámetros funciona de la misma forma para los parámetros que sean caracteres o del tipo string. Ejemplo:
+
+    function saludar(nombre){
+        let frase= `Hola ${nombre} ¿como estas?`;
+        document.write(frase);
+    }
+    saludar("Pedro");
+
+Una forma de escribir esto es de la siguiente manera:
+
+    const saludar = function(nombre){
+        let frase = `Hola ${nombre} ¿como estas?`;
+        document.write(frase);
+    }
+    saludar("Pedro");
+
+La constante saludar va a ser la función que va a recibir nombre como parámetro va a hacer un string y lo va a imprimir.
+
+>¿cómo romper el scope?
+
+El alcance que se tiene con las variables dentro de una función por buena práctica se hace con let para que el scope de la variable sea dentro de la función o de las llaves que la estén conteniendo, sin embargo como se vio en el capitulo 1, al no declarar de que tipo de variable se trata, este se sobreentiende con var, que tiene un alcance global, lo cual nos puede traer muchos errores a la hora de desarollar código de gran tamaño.
+
+## Funciones flecha <a name="id33"></a>
+
+Las funciones flecha es un tipo de declaración de función que nos permite agilizar el desarrollo aparte de contener más propiedades y permitirnos trabajar con diferentes funciones al mismo tiempo, fueron introducifas en ECMS6 y se ven así:
+
+>Función como la conocemos
+
+    const saludar = function(nombre){
+        let frase = `Hola ${nombre} ¿como estas?`;
+        document.write(frase);
+    }
+    saludar("Pedro");
+
+>Función flecha
+
+    const saludar = (nombre)=>{   
+        let frase = `Hola ${nombre} ¿como estas?`;
+        document.write(frase);
+    }
+    saludar("Pedro");
+
+Esto trae beneficios para el desarrollo de aplicaciones agiles ya que trae beneficios de sintaxis, funciona igual si hacemos cualquiera de los siguientes casos:
+
+>Sin paréntesis (solo si recibe un solo parámetro)
+
+    const saludar = nombre=>{   
+        let frase = `Hola ${nombre} ¿como estas?`;
+        document.write(frase);
+    }
+    saludar("Pedro");
+
+>En una sola linea de ejecución
+
+    let frase = `Hola ${nombre} ¿como estas?`;
+    const saludar = nombre=>{document.write(frase);}
+    saludar("Pedro");
+
+>incluso prescindir de las llaves
+
+    let frase = `Hola ${nombre} ¿como estas?`;
+    const saludar = nombre => document.write(frase);
+    saludar("Pedro");
+
+Sin embargo por fines prácticos y de desarrollar esto rápido nos quedaremos con la siguiente sintaxis para las funciones:
+
+# Problema del mundo real <a name="id34"></a>
+>Problema A
+
+Proporcione el código para fabricar un sistema que cumpla con las siguientes peticiones:
+- Solo ingresen los mayores de 18 años
+- El primero que entre después de las 2 AM no paga
+
+Solución Propuesta:
+
+    let free=false;
+    const validarEdad=(time)=>{
+        let edad = prompt("Cual es tu edad?");
+        if(edad>=18){
+            if(time>=2 && time<7 && free==false){
+                alert("Bienvenido, no pagarás boleto de acceso");
+                free=true;
+            }else{
+                alert(`Bienvenido, son las ${time}Hrs tu boleto de acceso tiene costo de $XX`);
+            }
+        }else{
+            alert("Eres menor de edad, por eso no vas a pasar");
+        }
+    }
+
+
+>Problema B
+
+Proporcione el código para fabricar un sistema que cumpla con las siguientes peticiones:
+- Registrar personas presentes
+- Registrar personas ausentes
+- Pasado 30 días mostrar la situación de la persona
+- Ausencias máximas 10%
