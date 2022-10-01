@@ -38,6 +38,9 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
     * [For in y For Of](./Cap2JS.md)
     * [Labels](./Cap2JS.md)
 * [Funciones](./Cap2JS.md)
+    * [Parámetros](./Cap2JS.md)
+    * [Funciones Flecha](./Cap2JS.md)
+* [Problema del mundo real](./Cap2JS.md)
 
 ## Diferencias entre JavaScript y NodeJS <a name="id1"></a>
 
@@ -460,3 +463,6 @@ Si el condicional if devuelve un valor false podremos tomar dos vías, else para
     }else{
         alert(`En realidad no te alcanza para nada :c`);
     }
+
+
+### [Continuar al Capitulo 2](./Cap2JS.md)

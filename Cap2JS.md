@@ -16,7 +16,8 @@
     * [Funciones Flecha](#id33)
 * [Problema del mundo real](#id34)
 
-* []()
+### [Volver al Capitulo 1](./README.md)
+
 
 ## Arrays <a name="id20"></a>
 
@@ -24,7 +25,7 @@ Los arrays son un tipo especial de variable, las variables eran cajitas donde gu
 
 Funciona de esta manera, en la caja vamos a ir guardando datos al declararlos, para sacarlos modificarlos leerlos o borrarlos necesitamos acceder a su indice, para un ejemplo más gráfico podemos ver el siguiente ejemplo gráfico:
 
-![If you see this... something go wrong](./Array.png)
+![If you see this... something go wrong](./Imagenes/Array.png)
 
 Como puedes observar la caja tiene elementos, tres elementos para ser exactos, para poder leer de forma ordenada el contenido de la caja lo tenemos que hacer a través de los indices que son los numeros de debajo de los elemntos, para poder leer el elemento 2 necesitaríamos acceder al indice numero 1 y se escribiría así:
 
@@ -57,7 +58,7 @@ Para acceder a ellos podemos hacerlo con los indices, e incluso operarlos dentro
 
 Los arrays asociativos a diferencia de los arrays normales para acceder a un indice o casilla la etiqueta o indice de cada casilla requiere de un dato de tipo string.
 
-![If you see this... something go wrong](./Array_asociativo.png)
+![If you see this... something go wrong](./Imagenes/Array_asociativo.png)
 
 No pueden ser números y un ejemplo de su sintaxis es la siguiente:
 
@@ -93,13 +94,13 @@ Intentalo ahora con tus datos.
 
 Los bucles en programación son sentencias de código muy parecidas al if, sin embargo el if una vez que se pregunta s es o no verdadero sigue con el código de forma secuencial, los bucles cuando preguntan si la sentencia se cumple y se ejecuta el código una vez, esta sentencia va a preguntar de nuevo si cumple la sentencia, si sigue cumpliendo la sentencia entonces volverá a ejecutar el código una y otra vez hasta que se deje e cumplir la sentencia
 
-![If you see this... something go wrong](./If%20y%20While.png)
+![If you see this... something go wrong](./Imagenes/If%20y%20While.png)
 
 ### Bucle while <a name="id24"></a>
 
 Como ya lo había dicho el bucle while preguntará al final de cada ejecución si la condición se sigue cumpliendo o no y ejecutará de nuevo el código. Este es un ejemplo del flujo de datos dentro del ciclo específico.
 
-![If you see this... something go wrong](./Flujo%20de%20atencion%20if%20y%20while.png)
+![If you see this... something go wrong](./Imagenes/Flujo%20de%20atencion%20if%20y%20while.png)
 
 La forma de declarar un while es la misma que la de un if
 
@@ -122,8 +123,8 @@ Ejemplo:
 
 Un derivado del bucle while es el bloque dowhile, tiene una sintaxis y acomodo muy parecido al bloque while, solo que el bloque do while lo que nos va a permitir hacer es primero ejecutar el código, y luego verificar que la sentencia se cumpla. 
 
-![If you see this... something go wrong](./Dowhile%20and%20while.png)
-![If you see this... something go wrong](./While%20do%20while%202.png)
+![If you see this... something go wrong](./Imagenes/Dowhile%20and%20while.png)
+![If you see this... something go wrong](./Imagenes/While%20do%20while%202.png)
 
 Ejemplo de tipado y uso de un dowhile
 
@@ -361,7 +362,7 @@ Prueba implementando la función suma de la siguiente forma:
 
     suma(12);
 
-El resultado debería ser NaN ya que estamos sumando 1 con un espacio en memoria, y como lo vimos en el capitulo uno cuando operas un numero con algo que no es un numero devuelve un NaN.
+El resultado debería ser NaN ya que estamos sumando 1 con un espacio en memoria, y como lo vimos en el capitulo uno ([Volver al Capitulo 1](./README.md)) cuando operas un numero con algo que no es un numero devuelve un NaN.
 
 >Scope
 
@@ -398,7 +399,7 @@ La constante saludar va a ser la función que va a recibir nombre como parámetr
 
 >¿cómo romper el scope?
 
-El alcance que se tiene con las variables dentro de una función por buena práctica se hace con let para que el scope de la variable sea dentro de la función o de las llaves que la estén conteniendo, sin embargo como se vio en el capitulo 1, al no declarar de que tipo de variable se trata, este se sobreentiende con var, que tiene un alcance global, lo cual nos puede traer muchos errores a la hora de desarollar código de gran tamaño.
+El alcance que se tiene con las variables dentro de una función por buena práctica se hace con let para que el scope de la variable sea dentro de la función o de las llaves que la estén conteniendo, sin embargo como se vio en el capitulo 1 ([Volver al Capitulo 1](./README.md)), al no declarar de que tipo de variable se trata, este se sobreentiende con var, que tiene un alcance global, lo cual nos puede traer muchos errores a la hora de desarollar código de gran tamaño.
 
 ## Funciones flecha <a name="id33"></a>
 
@@ -476,3 +477,5 @@ Proporcione el código para fabricar un sistema que cumpla con las siguientes pe
 - Registrar personas ausentes
 - Pasado 30 días mostrar la situación de la persona
 - Ausencias máximas 10%
+
+### [Continuar al Capitulo 3](./Cap3JS.md)
