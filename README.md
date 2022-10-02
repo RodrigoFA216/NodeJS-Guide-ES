@@ -4,43 +4,29 @@ Javascript es un lenguaje de programación interpretado que puede correr en web,
 
 ![If you look this... something go wrong](./Imagenes/tipos%20de%20tipados.png)
 
-## Indice Capitulo 1
-* [Diferencias entre JS y NodeJS](#id1)
-    * [Requisitos para empezar en JS](#id2)
-* [Primeros pasos en JS](#id3)
-    * [Declaración de variables](#id4)
-    * [Tipos de datos en las variables](#id5)
-* [Entrada y salida de datos](#id6)
-    * [Input de datos](#id7)
-    * [Out de datos](#id8)
-* [Operadores de asignación](#id9)
-* [Operadores Aritméticos](#id10)
-* [Concatenación](#id11)
-* [Operadores de comparación](#id12)
-    * [Operadores Booleanos](#id13)
-* [Camel Case](#id14)
-* [Condicionales](#id15)
-    * [IF](#id16)
-    * [ELSE](#id17)
-    * [ELSE IF](#id18)
-* [Problemas del mundo real](#id19)
+# Indice
 
-## Indice Capitulo 2
-* [Arrays](./Cap2JS.md)
-* [Arrays Asociativos](./Cap2JS.md)
-    * [Implementación](./Cap2JS.md)
-* [Bucles e iteración](./Cap2JS.md)
-    * [While](./Cap2JS.md)
-    * [Do While](./Cap2JS.md)
-    * [For](./Cap2JS.md)
-        * [Continue](./Cap2JS.md)
-        * [Break](./Cap2JS.md)
-    * [For in y For Of](./Cap2JS.md)
-    * [Labels](./Cap2JS.md)
-* [Funciones](./Cap2JS.md)
-    * [Parámetros](./Cap2JS.md)
-    * [Funciones Flecha](./Cap2JS.md)
-* [Problema del mundo real](./Cap2JS.md)
+| Capitulo 1 | Capitulo 2 |
+|----------|---------|
+| [Diferencias entre JS y NodeJS](#id1)     | [Arrays](./Cap2JS.md) |
+| [Requisitos para empezar en JS](#id2)     | [Arrays Asociativos](./Cap2JS.md) |
+| [Primeros pasos en JS](#id3)              | [Bucles e iteración](./Cap2JS.md) |
+| [Declaración de variables](#id4)          | [While](./Cap2JS.md) |
+| [Tipos de datos en las variables](#id5)   | [Dowhile](./Cap2JS.md) |
+| [Entrada y salida de datos](#id6)         | [For](./Cap2JS.md) |
+| [Input de datos](#id7)                    | [Continue](./Cap2JS.md) |
+| [Out de datos](#id8)                      | [Break](./Cap2JS.md) |
+| [Operadores de asignación](#id9)          | [for in y for of](./Cap2JS.md) |
+| [Operadores Aritméticos](#id10)           | [labels](./Cap2JS.md) |
+| [Concatenación](#id11)                    | [Funciones](./Cap2JS.md) |
+| [Operadores de comparación](#id12)        | [Parámetros](./Cap2JS.md) |
+| [Operadores Booleanos](#id13)             | [Funciones Flecha](./Cap2JS.md) |
+| [Camel Case](#id14)                       | [Problemas del mundo real](./Cap2JS.md) |
+| [Condicionales](#id15)                    |  |
+| [IF](#id16), [ELSE](#id17), [ELSE IF](#id18) |  |
+| [Problemas del mundo real](#id19)         |  |
+|  |  |
+
 
 ## Diferencias entre JavaScript y NodeJS <a name="id1"></a>
 
