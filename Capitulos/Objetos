@@ -1,0 +1,40 @@
+// Objetos tienen atributos y métodos, los métodos son funciones y los atributos variables
+myAuto={
+    marca: "Toyota",
+    modelo: "Corolla",
+    annio: 2010,
+    usabilidad: true,
+    capacidadLitros: 1.9,
+    detalleDelAuto: function(){
+        console.log(`This car ${this.marca} is of model ${this.modelo} of the year ${this.annio}`);
+    }
+}
+console.log(`${myAuto.marca}`)
+console.log(`${myAuto.modelo}`)
+console.log(`${myAuto.annio}`)
+console.log(`${myAuto.usabilidad}`)
+console.log(`${myAuto.capacidadLitros}`)
+myAuto.detalleDelAuto()
+
+//Create objects by a construcrtor
+
+function person(name, lName, age){
+    this.name= name;
+    this.lName=lName;
+    this.age=age;
+}
+var nuevaPersona=new person("rodrigo", "flores", 23)
+console.log("do more than one person in a object with 'new'");
+var persons=[]
+for (let i = 0; i < 3; i++) {
+    var Name=prompt(`Capture the name of the ${i} person`)
+    var LName=prompt(`Capture the last name of the ${i} person`)
+    var Age=prompt(`Capture the age of the ${i} person`)
+    persons.push(new person(Name, LName, Age))
+}
+for (let i = 0; i < persons.length; i++) {
+    console.log(`the name of ${i} person is ${persons[i].name}`);
+    console.log(`the Last name of ${i} person is ${persons[i].lName}`);
+    console.log(`the age of ${i} person is ${persons[i].age}`);
+    
+}

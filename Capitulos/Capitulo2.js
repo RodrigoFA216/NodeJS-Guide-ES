@@ -56,3 +56,5 @@ for(let i=0 ; i<6 ; i++){
 for(var i = Things.length - 1; i >= 0; i--){
     Things[i];
 }
+
+if (false === !true) { console.log(false == true) } else { console.log(true === !false) }
